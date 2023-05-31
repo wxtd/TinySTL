@@ -229,6 +229,12 @@ class reverse_iterator {
   explicit reverse_iterator(iterator_type i) : natural(i) {}
   reverse_iterator(const self_type& rhs) : natural(rhs.natural) {}
 
+  self_type& operator=(const self_type& rhs) {
+    if (this->natural == rhs.natural) return *this;
+    this->natural = rhs.natural;
+    return *this;
+  }
+
   // 返回对应的正向迭代器
   iterator_type base() const {
     return natural;
@@ -253,7 +259,7 @@ class reverse_iterator {
   }
 
   // x++
-  self_type operator++(int) {
+   self_type operator++(int) {
     self_type t = *this;
     --natural;
     return t;
