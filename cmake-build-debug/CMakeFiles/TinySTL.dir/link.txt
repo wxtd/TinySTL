@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-10/root/usr/bin/g++ -g CMakeFiles/TinySTL.dir/main.cpp.o -o TinySTL 

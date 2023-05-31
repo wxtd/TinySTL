@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="远程开发" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="10.176.25.26 (f9849c39-1055-44f5-8402-3c2ec4daeb2c)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ms/cpp/TinySTL" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
