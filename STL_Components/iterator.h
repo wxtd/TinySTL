@@ -36,9 +36,9 @@ struct has_iterator_cat {
  private:
   struct two { char a; char b; };
   template<class U>
-  static two test(...);
+  static two test(...) {};
   template<class U>
-  static char test(typename U::iterator_category* = 0);
+  static char test(typename U::iterator_category* = 0) {};
  public:
   // 若含有T类迭代器 则进入test@2 返回char value为true
   // 否则返回two value为false
@@ -259,7 +259,7 @@ class reverse_iterator {
   }
 
   // x++
-   self_type operator++(int) {
+  self_type operator++(int) {
     self_type t = *this;
     --natural;
     return t;
