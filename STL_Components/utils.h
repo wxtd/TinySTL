@@ -181,7 +181,7 @@ class pair {
     return *this;
   }
 
-  pair& operator=(pair&& rhs) {
+  pair& operator=(pair&& rhs)  noexcept {
     if (&rhs == this) return *this;
     first = stl::move(rhs.first);
     second = stl::move(rhs.second);
